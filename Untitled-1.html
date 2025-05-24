@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>ExploreX Travel</title>
+	<link rel="icon" href="imgs/YelowBigLogo.png" type="image/x-icon">
+
+	<!-- CSS -->
+
+	<!-- BOOTSTRAP -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+	<link rel="stylesheet" href="style.css"/>
+
+	<!-- Font Awesome Icons -->
+	<script src="https://kit.fontawesome.com/d5b956fb36.js" crossorigin="anonymous"></script>
+
+	<!-- AOS -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+	<!-- JQEURY CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+	<!-- Ancoră de sus -->
+	<div id="top"></div>
+
+	<!-- BARA DE NAVIGARE -->
+	<nav id="navScrollSpy" class="navbar sticky-top navbar-expand-lg">
+		<div class="container">
+			<a class="navbar-brand fw-bolder" href="#top">
+				<img src="imgs/NewBlackLogo.png" alt="ExploreX Travel Logo" height="40" class="me-2">
+				ExploreX Travel
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Comută navigarea">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse container d-flex-md justify-content-md-end" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="#top">Acasă</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#consultatie-galben">Consultație</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#destinations">Destinații</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#service">Servicii</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#hoteluri-tari">Hoteluri</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#gallery">Galerie</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- FINAL BARA DE NAVIGARE -->
+
+
+	<!-- carusel 60vh -->
+
+<div id="carouselTravelWasp" class="carousel slide container-fluid" data-bs-ride="carousel">
+	<div class="carousel-inner">
+		<div class="carousel-item active">
+			<img src="imgs/carousel/hike.jpg" class="d-block w-100" alt="Plimbare prin munți" />
+			<div class="carousel-caption">
+				<h1 class="fw-bolder">Explorează natura sălbatică</h1>
+				<p class="fw-medium">Descoperă liniștea și frumusețea munților</p>
+			</div>
+		</div>
+		<div class="carousel-item">
+			<img src="imgs/carousel/island-beach.jpeg" class="d-block w-100" alt="Aventuri pe plajă" />
+			<div class="carousel-caption">
+				<h1 class="fw-bolder">Bucură-te de viața pe apă</h1>
+				<p class="fw-medium">Trăiește aventuri memorabile </p>
+			</div>
+		</div>
+		<div class="carousel-item">
+			<img src="imgs/carousel/caving.jpg" class="d-block w-100" alt="Explorare în peșteri" />
+			<div class="carousel-caption">
+				<h1 class="fw-bolder">Descoperă lumea subterană</h1>
+				<p class="fw-medium">
+					Explorarea peșterilor îți oferă o nouă perspectivă asupra naturii
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- sfârșitul caruselului -->
+
+
+<!-- motive să ne alegi -->
+<section class="choose-us features py-5">
+	<div class="container travel-wasp" data-aos="fade-up">
+		<div class="row justify-content-md-center">
+			<div class="col-xl-6 col-lg-6 col-md-12">
+				<!-- caracteristici -->
+				<div class="row">
+					<div class="col-xl-6 col-lg-6 col-md-6">
+						<i class="fa-solid fa-plane-departure"></i>
+						<h5 class="mt-2">Planificare călătorii</h5>
+						<p class="text-lg-left">
+							Îți oferim cele mai bune opțiuni pentru transport și cazare
+						</p>
+					</div>
+					<div class="col-xl-6 col-lg-6 col-md-6">
+						<i class="fa-solid fa-chart-line"></i>
+						<h5 class="mt-2">Activități personalizate</h5>
+						<p class="text-lg-left">
+							De la drumeții la sporturi acvatice, activitățile noastre se potrivesc perfect nevoilor tale
+						</p>
+					</div>
+					<div class="col-xl-6 col-lg-6 col-md-6">
+						<i class="fa-solid fa-map-location-dot"></i>
+						<h5 class="mt-2">Ghidare pe locații</h5>
+						<p class="text-lg-left">
+							Descoperă cele mai frumoase locuri, cu ajutorul experților noștri
+						</p>
+					</div>
+					<div class="col-xl-6 col-lg-6 col-md-6">
+						<i class="fa-solid fa-user-shield"></i>
+						<h5 class="mt-2">Ghid privat</h5>
+						<p class="text-lg-left">
+							Beneficiază de servicii personalizate cu un ghid dedicat doar ție
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-6 col-lg-6 col-12">
+				<!-- imagini -->
+				<div class="row">
+					<div class="col-md-6 ps-md-5 mt-sm-3">
+						<img src="imgs/features/feature-1.jpg" class="img-fluid" alt="Plajă exotică" />
+					</div>
+					<div class="col-md-6 mt-md-5 ps-md-5 mt-3">
+						<img src="imgs/features/feature-2.jpg" class="img-fluid" alt="Plajă în Maldive" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Sfârșitul secțiunii "motive să ne alegi" -->
+
+<!-- SECTIUNE CONSULTATIE GALBEN -->
+<section class="consultatie-galben py-4" id="consultatie-galben">
+	<div class="container text-center">
+	  <span style="display:inline-block; color:#f7b94b; border:2px solid #f7b94b; background:transparent; border-radius:8px; font-size:0.85rem; font-weight:500; padding:1px 8px; line-height:1.5;">Consultatie</span>
+	</div>
+  </section>
+  <!-- SFARSIT SECTIUNE CONSULTATIE GALBEN -->
+  
+  <!-- SECTIUNE CONSULTATIE TELEFON -->
+  <section class="consultatie-telefon py-5">
+	<div class="container">
+	  <div style="background:#fffbe6; border-radius:18px; padding:32px 0;">
+		<h2 class="text-center fw-bold mb-4">Vreau să primesc consultație la telefon</h2>
+		<form class="row justify-content-center" id="consultatieForm">
+		  <div class="col-md-3 mb-3">
+			<input type="text" class="form-control form-control-lg rounded-pill text-center" placeholder="Nume" id="consultatieNume" required>
+		  </div>
+		  <div class="col-md-3 mb-3">
+			<input type="tel" class="form-control form-control-lg rounded-pill text-center" placeholder="Telefon" id="consultatieTelefon" required>
+		  </div>
+		  <div class="w-100"></div>
+		  <div class="col-md-6 mt-2">
+			<button type="submit" class="btn w-100 py-3 fw-bold" style="background:#fa463b; color:#fff; border-radius:20px; font-style:italic; font-size:1.2rem;">Sunați-mă</button>
+		  </div>
+		  <div class="col-12 mt-3">
+			<div id="consultatieMsg" class="text-center"></div>
+		  </div>
+		</form>
+	  </div>
+	</div>
+  </section>
+  <!-- SFÂRȘIT SECȚIUNE CONSULTAȚIE TELEFON -->
+
+
+<!-- Oferte Top -->
+<section id="destinations" class="top-deals py-5">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="section-title text-center" data-aos="fade-up">
+					<button type="button" class="btn primary-color btn-sm my-2" disabled>Destinații</button>
+					<h3 class="mt-md-3">Cele mai populare locuri de călătorie</h3>
+				</div>
+			</div>
+		</div>
+		<div class="row my-5">
+			<div class="col-sm-12 col-xl-4 col-lg-6">
+				<figure class="figure single-deal" data-aos="fade-right" onclick="window.open('https://www.booking.com/searchresults.ro.html?ss=Princetown+Austria', '_blank')" style="cursor: pointer;">
+					<img src="imgs/destinations/1.jpg" class="figure-img img-fluid" alt="Kayaking, Siargao">
+					<figcaption class="figure-caption p-3">
+						<span class="tr-price p-2">
+							200$/Noapte
+						</span>
+						<small><i class="fa-regular fa-clock my-2"></i> 10 zile de excursie</small>
+						<h5>Princetown, Austria</h5>
+						<div class="tour-rating mt-3">
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+							<span class="rating_count">(140)</span>
+						</div>
+					</figcaption>
+				</figure>
+			</div>
+			<div class="col-sm-12 col-xl-4 col-lg-6">
+				<figure class="figure single-deal" data-aos="fade-up" onclick="window.open('https://www.booking.com/searchresults.ro.html?ss=Surfers+Paradise+Australia', '_blank')" style="cursor: pointer;">
+					<img src="imgs/destinations/2.jpg" class="figure-img img-fluid"
+						alt="Vigan City, Philippines">
+					<figcaption class="figure-caption p-3">
+						<span class="tr-price p-2">
+							150$/Noapte
+						</span>
+						<small><i class="fa-regular fa-clock my-2"></i> 7 zile de excursie</small>
+						<h5>Surfers Paradise, Australia</h5>
+						<div class="tour-rating mt-3">
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+							<span class="rating_count">(189)</span>
+						</div>
+					</figcaption>
+				</figure>
+			</div>
+			<div class="col-sm-12 col-xl-4 col-lg-6">
+				<figure class="figure single-deal" data-aos="fade-left" onclick="window.open('https://www.booking.com/searchresults.ro.html?ss=Sydney+Australia', '_blank')" style="cursor: pointer;">
+					<img src="imgs/destinations/3.jpg" class="figure-img img-fluid"
+						alt="Oslob Whale Shark">
+					<figcaption class="figure-caption p-3">
+						<span class="tr-price p-2">
+							350$/Noapte
+						</span>
+						<small><i class="fa-regular fa-clock my-2"></i> 10 zile de excursie</small>
+						<h5>Sydney, Australia</h5>
+						<div class="tour-rating mt-3">
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+							<span class="rating_count">(250)</span>
+						</div>
+					</figcaption>
+				</figure>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Sfârșitul secțiunii Top Destinații -->
+
+
+
+<!-- Servicii -->
+<section data-bs-spy="scroll" data-bs-target="#navScrollSpy" class="services py-5" id="service">
+	<div class="container" data-aos="fade-up">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="section-title text-center">
+					<button type="button" class="btn primary-color btn-sm my-2" disabled>Servicii</button>
+					<h3 class="mt-md-3">Ce vă oferim ?</h3>
+				</div>
+			</div>
+		</div>
+		<div class="row text-left mt-sm-2 mt-md-4">
+			<div class="col-xl-4 col-lg-6 col-md-6 col-12 services-card p-sm-2 p-md-4">
+				<div class="service p-4 my-2">
+					<div class="icon my-3">
+						<i class="fa-solid fa-bed"></i>
+					</div>
+					<div class="service-text">
+						<h4>Camere de lux</h4>
+						<p class="mt-md-2 mt-lg-3">Bucurați-vă de confort și eleganță în camerele noastre spațioase</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-4 col-lg-6 col-md-6 col-12 services-card p-sm-2 p-md-4">
+				<div class="service p-4 my-2">
+					<div class="icon my-3">
+						<i class="fa-solid fa-burger"></i>
+					</div>
+					<div class="service-text">
+						<h4>Preparatele noastre delicioase</h4>
+						<p class="mt-md-2 mt-lg-3">Savurați cele mai bune preparate culinare pregătite de bucătarii noștri</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-4 col-lg-6 col-md-6 col-12 services-card p-sm-2 p-md-4">
+				<div class="service p-4 my-2">
+					<div class="icon my-3">
+						<i class="fa-solid fa-taxi"></i>
+					</div>
+					<div class="service-text">
+						<h4>Taxi aeroport</h4>
+						<p class="mt-md-2 mt-lg-3">Transferuri rapide și sigure între aeroport și destinația dumneavoastră</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xl-4 col-lg-6 col-md-6 col-12 services-card p-sm-2 p-md-4">
+				<div class="service p-4 my-2">
+					<div class="icon my-3">
+						<i class="fa-solid fa-wifi"></i>
+					</div>
+					<div class="service-text">
+						<h4>Wi-Fi gratuit</h4>
+						<p class="mt-md-2 mt-lg-3">Rămâneți conectat oriunde v-ați afla cu internet de mare viteză</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-4 col-lg-6 col-md-6 col-12 services-card p-sm-2 p-md-4">
+				<div class="service p-4 my-2">
+					<div class="icon my-3">
+						<i class="fa-solid fa-briefcase-medical"></i>
+					</div>
+					<div class="service-text">
+						<h4>Asistență medicală gratuită</h4>
+						<p class="mt-md-2 mt-lg-3">Siguranța și sănătatea dumneavoastră sunt prioritatea noastră</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-4 col-lg-6 col-md-6 col-12 services-card p-sm-2 p-md-4">
+				<div class="service p-4 my-2">
+					<div class="icon my-3">
+						<i class="fa-solid fa-headset"></i>
+					</div>
+					<div class="service-text">
+						<h4>Ghid turistic</h4>
+						<p class="mt-md-2 mt-lg-3">Explorați cele mai frumoase locuri cu ajutorul ghizilor noștri profesioniști</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Sfârșitul secțiunii Servicii -->
+
+<!-- SECTIUNE HOTELURI PE TARI -->
+<section class="py-5" id="hoteluri-tari">
+	<div class="container">
+		<div class="section-title text-center mb-4">
+			<span style="display:inline-block; color:#f7b94b; border:2px solid #f7b94b; background:transparent; border-radius:8px; font-size:0.85rem; font-weight:500; padding:1px 8px; line-height:1.5;">Hoteluri recomandate</span>
+			<h3 class="mt-md-3">Hoteluri din 6 țări populare</h3>
+		</div>
+		<div id="lista-hoteluri"></div>
+	</div>
+</section>
+<style>
+.hotel-card {
+	box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+	border-radius: 12px;
+	background: #fff;
+	margin-bottom: 32px;
+	padding: 20px 24px;
+	transition: box-shadow 0.2s;
+}
+.hotel-card:hover {
+	box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+}
+.hotel-title {
+	color: #fa463b;
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+.hotel-stars {
+	color: #f7b94b;
+	font-size: 1.1rem;
+}
+.hotel-carousel {
+	width: 100%;
+	max-width: 420px;
+	margin: 0 auto 12px auto;
+}
+.hotel-carousel img {
+	width: 100%;
+	height: 240px;
+	object-fit: cover;
+	border-radius: 10px;
+	border: 1px solid #eee;
+	background: #f8f8f8;
+}
+@media (max-width: 600px) {
+	.hotel-card { padding: 12px 6px; }
+	.hotel-carousel img { height: 160px; }
+}
+</style>
+<script>
+const hotelImages = {
+	"Hotel Aqua": [
+		"imgs/hotels/Turcia/HotelAqua/1.png", "imgs/hotels/Turcia/HotelAqua/2.png", "imgs/hotels/Turcia/HotelAqua/3.png", "imgs/hotels/Turcia/HotelAqua/4.png", "imgs/hotels/Turcia/HotelAqua/5.png"
+	],
+	"Titanic Beach Lara": [
+		"imgs/hotels/Turcia/TitanicBeachLara/1.png", "imgs/hotels/Turcia/TitanicBeachLara/2.png", "imgs/hotels/Turcia/TitanicBeachLara/3.png", "imgs/hotels/Turcia/TitanicBeachLara/4.png", "imgs/hotels/Turcia/TitanicBeachLara/5.png"
+	],
+	"Liberty Hotels Lykia": [
+		"imgs/hotels/Turcia/LibertyHotelsLykia/1.png", "imgs/hotels/Turcia/LibertyHotelsLykia/2.png", "imgs/hotels/Turcia/LibertyHotelsLykia/3.png", "imgs/hotels/Turcia/LibertyHotelsLykia/4.png", "imgs/hotels/Turcia/LibertyHotelsLykia/5.png"
+	],
+	"Baron Palace": [
+		"imgs/hotels/Egipt/BaronPalace/1.png", "imgs/hotels/Egipt/BaronPalace/2.png", "imgs/hotels/Egipt/BaronPalace/3.png", "imgs/hotels/Egipt/BaronPalace/4.png", "imgs/hotels/Egipt/BaronPalace/5.png"
+	],
+	"Steigenberger Al Dau Beach": [
+		"imgs/hotels/Egipt/SteigenbergerAlDauBeach/1.png", "imgs/hotels/Egipt/SteigenbergerAlDauBeach/2.png", "imgs/hotels/Egipt/SteigenbergerAlDauBeach/3.png", "imgs/hotels/Egipt/SteigenbergerAlDauBeach/4.png", "imgs/hotels/Egipt/SteigenbergerAlDauBeach/5.png"
+	],
+	"Jaz Aquamarine": [
+		"imgs/hotels/Egipt/JazAquamarine/1.png", "imgs/hotels/Egipt/JazAquamarine/2.png", "imgs/hotels/Egipt/JazAquamarine/3.png", "imgs/hotels/Egipt/JazAquamarine/4.png", "imgs/hotels/Egipt/JazAquamarine/5.png"
+	],
+	"Melia Grand Hermitage": [
+		"imgs/hotels/Bulgaria/MeliaGrandHermitage/1.png", "imgs/hotels/Bulgaria/MeliaGrandHermitage/2.png", "imgs/hotels/Bulgaria/MeliaGrandHermitage/3.png", "imgs/hotels/Bulgaria/MeliaGrandHermitage/4.png", "imgs/hotels/Bulgaria/MeliaGrandHermitage/5.png"
+	],
+	"Sol Nessebar Palace": [
+		"imgs/hotels/Bulgaria/SolNessebarPalace/1.png", "imgs/hotels/Bulgaria/SolNessebarPalace/2.png", "imgs/hotels/Bulgaria/SolNessebarPalace/3.png", "imgs/hotels/Bulgaria/SolNessebarPalace/4.png", "imgs/hotels/Bulgaria/SolNessebarPalace/5.png"
+	],
+	"Hotel Laguna Garden": [
+		"imgs/hotels/Bulgaria/HotelLagunaGarden/1.png", "imgs/hotels/Bulgaria/HotelLagunaGarden/2.png", "imgs/hotels/Bulgaria/HotelLagunaGarden/3.png", "imgs/hotels/Bulgaria/HotelLagunaGarden/4.png", "imgs/hotels/Bulgaria/HotelLagunaGarden/5.png"
+	],
+	"Hotel Artemide": [
+		"imgs/hotels/Italia/HotelArtemide/1.png", "imgs/hotels/Italia/HotelArtemide/2.png", "imgs/hotels/Italia/HotelArtemide/3.png", "imgs/hotels/Italia/HotelArtemide/4.png", "imgs/hotels/Italia/HotelArtemide/5.png"
+	],
+	"NH Collection": [
+		"imgs/hotels/Italia/NHCollection/1.png", "imgs/hotels/Italia/NHCollection/2.png", "imgs/hotels/Italia/NHCollection/3.png", "imgs/hotels/Italia/NHCollection/4.png", "imgs/hotels/Italia/NHCollection/5.png"
+	],
+	"Grand Hotel Vesuvio": [
+		"imgs/hotels/Italia/GrandHotelVesuvio/1.png", "imgs/hotels/Italia/GrandHotelVesuvio/2.png", "imgs/hotels/Italia/GrandHotelVesuvio/3.png", "imgs/hotels/Italia/GrandHotelVesuvio/4.png", "imgs/hotels/Italia/GrandHotelVesuvio/5.png"
+	],
+	"Adams Beach Hotel": [
+		"imgs/hotels/Cipru/AdamsBeachHotel/1.png", "imgs/hotels/Cipru/AdamsBeachHotel/2.png", "imgs/hotels/Cipru/AdamsBeachHotel/3.png", "imgs/hotels/Cipru/AdamsBeachHotel/4.png", "imgs/hotels/Cipru/AdamsBeachHotel/5.png"
+	],
+	"Elysium": [
+		"imgs/hotels/Cipru/Elysium/1.png", "imgs/hotels/Cipru/Elysium/2.png", "imgs/hotels/Cipru/Elysium/3.png", "imgs/hotels/Cipru/Elysium/4.png", "imgs/hotels/Cipru/Elysium/5.png"
+	],
+	"Nissi Beach Resort": [
+		"imgs/hotels/Cipru/NissiBeachResort/1.png", "imgs/hotels/Cipru/NissiBeachResort/2.png", "imgs/hotels/Cipru/NissiBeachResort/3.png", "imgs/hotels/Cipru/NissiBeachResort/4.png", "imgs/hotels/Cipru/NissiBeachResort/5.png"
+	],
+	"Hotel International": [
+		"imgs/hotels/Romania/HotelInternational/1.png", "imgs/hotels/Romania/HotelInternational/2.png", "imgs/hotels/Romania/HotelInternational/3.png", "imgs/hotels/Romania/HotelInternational/4.png", "imgs/hotels/Romania/HotelInternational/5.png"
+	],
+	"Teleferic Grand Hotel": [
+		"imgs/hotels/Romania/TelefericGrandHotel/1.png", "imgs/hotels/Romania/TelefericGrandHotel/2.png", "imgs/hotels/Romania/TelefericGrandHotel/3.png", "imgs/hotels/Romania/TelefericGrandHotel/4.png", "imgs/hotels/Romania/TelefericGrandHotel/5.png"
+	],
+	"Vega Hotel": [
+		"imgs/hotels/Romania/VegaHotel/1.png", "imgs/hotels/Romania/VegaHotel/2.png", "imgs/hotels/Romania/VegaHotel/3.png", "imgs/hotels/Romania/VegaHotel/4.png", "imgs/hotels/Romania/VegaHotel/5.png"
+	]
+};
+
+fetch('/hoteluri')
+	.then(res => res.json())
+	.then(data => {
+		// Grupează hotelurile pe țări
+		const grouped = {};
+		data.forEach(hotel => {
+			if (!grouped[hotel.tara]) grouped[hotel.tara] = [];
+			grouped[hotel.tara].push(hotel);
+		});
+		let html = '';
+		let carouselId = 0;
+		Object.keys(grouped).forEach(tara => {
+			html += `<div class="mb-4"><h4 class="fw-bold" style="color:#f7b94b;">${tara}</h4><div class="row">`;
+			grouped[tara].forEach(hotel => {
+				carouselId++;
+				const images = hotelImages[hotel.nume] || [];
+				html += `
+				<div class="col-md-6 col-lg-4">
+					<div class="hotel-card mb-4">
+						<div class="hotel-title mb-1">${hotel.nume}</div>
+						<div class="mb-1"><span class="text-muted">${hotel.oras}</span></div>
+						<div class="hotel-stars mb-2">${'★'.repeat(hotel.stele)}</div>
+						<div class="hotel-carousel mb-2">
+							${images.length > 0 ? `
+							<div id="carousel${carouselId}" class="carousel slide" data-bs-ride="carousel">
+								<div class="carousel-inner">
+									${images.map((img, idx) => `
+										<div class="carousel-item${idx === 0 ? ' active' : ''}">
+											<img src="${img}" class="d-block w-100" alt="${hotel.nume}">
+										</div>
+									`).join('')}
+								</div>
+								<button class="carousel-control-prev" type="button" data-bs-target="#carousel${carouselId}" data-bs-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="visually-hidden">Previous</span>
+								</button>
+								<button class="carousel-control-next" type="button" data-bs-target="#carousel${carouselId}" data-bs-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="visually-hidden">Next</span>
+								</button>
+							</div>
+							` : '<span class="text-muted">Imagini indisponibile</span>'}
+						</div>
+					</div>
+				</div>
+				`;
+			});
+			html += '</div></div>';
+		});
+		document.getElementById('lista-hoteluri').innerHTML = html;
+	})
+	.catch(() => {
+		document.getElementById('lista-hoteluri').innerHTML = '<div class="text-danger">Eroare la încărcarea hotelurilor!</div>';
+	});
+</script>
+
+<!-- GALERIE -->
+<section id="gallery" class="tour-gallery py-5">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12" data-aos="fade-up">
+				<div class="section-title text-center">
+					<button type="button" class="btn primary-color btn-sm my-2" disabled>Galerie</button>
+					<h3 class="mt-md-3">Cele mai frumoase fotografii împărtășite de turiști</h3>
+				</div>
+			</div>
+		</div>
+		<div class="gallery-grid">
+			<div class="row mt-sm-2 mt-md-4">
+				
+				<div class="col-lg-4 col-md-6 col-12">
+					<div class="single-gallery">
+						<img src="imgs/gallery/peru.jpg" alt="Peru" class="img-fluid">
+						<h5 class="text-center">Machu Picchu, Peru</h5>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-12">
+					<div class="single-gallery">
+						<img src="imgs/gallery/canada.jpg" alt="Canada" class="img-fluid">
+						<h5 class="text-center">Lacul Moraine, Canada</h5>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-12">
+					<div class="single-gallery">
+						<img src="imgs/gallery/thailand.jpg" alt="Thailanda" class="img-fluid">
+						<h5 class="text-center">Thailanda</h5>
+					</div>
+				</div>
+				<div class="col-md-6 col-12">
+					<div class="single-gallery">
+						<img src="imgs/gallery/uae.jpg" alt="Emiratele Arabe Unite" class="img-fluid">
+						<h5 class="text-center">Emiratele Arabe Unite</h5>
+					</div>
+				</div>
+				<div class="col-md-6 col-12">
+					<div class="single-gallery">
+						<img src="imgs/gallery/egypt.jpg" alt="Egipt" class="img-fluid">
+						<h5 class="text-center">Egipt</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- SFÂRȘITUL GALERIEI -->
+
+
+<!-- PACHETE TURISTICE DE TOP -->
+<section class="package py-5">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12" data-aos="fade-up">
+				<div class="section-title text-center">
+					<button type="button" class="btn primary-color btn-sm my-2" disabled>Pachete Populare</button>
+					<h3 class="mt-md-3">Cele Mai Bune Pachete Ale Noastre</h3>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 col-md-6 col-lg-4">
+				<div class="single-package" data-aos="fade-right">
+					<div class="pack-image">
+						<img src="imgs/popular-packages/1.jpg" alt="Plaja franceză" class="img-fluid">
+					</div>
+					<div class="tour-text py-2 px-3">
+						<div class="tour-rating mb-2">
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+						</div>
+						<div class="row">
+							<div class="col-8">
+								<h5 class="fw-bolder">French Sea Beach</h5>
+							</div>
+							<div class="col-4">
+								<p class="pack-price">De la 159$</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-6 col-lg-4">
+				<div class="single-package" data-aos="fade-up">
+					<div class="pack-image">
+						<img src="imgs/popular-packages/2.jpg" alt="Stațiunea insulei de vis" class="img-fluid">
+					</div>
+					<div class="tour-text p-2">
+						<div class="tour-rating mb-2">
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+						</div>
+						<div class="row">
+							<div class="col-8">
+								<h5 class="fw-bolder">Beautiful Island Resort</h5>
+							</div>
+							<div class="col-4">
+								<p class="pack-price">De la 269$</p>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-6 col-lg-4">
+				<div class="single-package" data-aos="fade-left">
+					<div class="pack-image">
+						<img src="imgs/popular-packages/3.jpg" alt="Plaja Maldive" class="img-fluid">
+					</div>
+					<div class="tour-text p-2">
+						<div class="tour-rating mb-2">
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+						</div>
+						<div class="row">
+							<div class="col-8">
+								<h5 class="fw-bolder">Maldives Sea Beach</h5>
+							</div>
+							<div class="col-4">
+								<p class="pack-price">De la 350$</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- SFÂRȘITUL PACHETELOR TURISTICE DE TOP -->
+
+
+
+	
+
+
+	<!-- SUBSOL  -->
+<section class="footer py-5" id="contact">
+	<div class="container footer-top">
+		<div class="row">
+			<div class="col-xl-3 col-lg-3 col-12">
+				<div class="footer-column pb-xl-3 mb-4">
+					<h4 class="col-title pb-xl-3 pb-sm-2">Contact</h4>
+					<div class="footer-cont-info">
+						<p>
+							<i class="fa-solid fa-phone me-2"></i>
+							<span>+37369816566</span>
+						</p>
+						<p>
+							<i class="fa-solid fa-at me-2"></i>
+							<span>explorex.travel@travel.com</span>
+						</p>
+						<p>
+							<i class="fa-solid fa-location-arrow me-2"></i>
+							<span>Chișinău str. Alexandru cel Bun 98</span>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-6 col-lg-6 col-12">
+				<div class="map-container">
+					<iframe 
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2719.6504900360997!2d28.8277!3d47.0256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97c3626b0c3b1%3A0x9c2c3b4c5d6e7f8g!2sStrada%20Alexandru%20cel%20Bun%2098%2C%20Chi%C8%99in%C4%83u!5e0!3m2!1sro!2s!4v1234567890!5m2!1sro!2s" 
+						width="100%" 
+						height="200" 
+						style="border:0; border-radius: 8px;" 
+						allowfullscreen="" 
+						loading="lazy" 
+						referrerpolicy="no-referrer-when-downgrade">
+					</iframe>
+				</div>
+			</div>
+			<div class="col-xl-3 col-lg-3 col-12">
+				<div class="footer-column pb-xl-3 mb-4">
+					<h4 class="col-title pb-xl-3 pb-sm-2">Program de Lucru</h4>
+					<div class="footer-cont-info">
+						<p>
+							<i class="fa-regular fa-clock me-2"></i>
+							<span>Luni - Vineri: 09:00 - 18:00</span>
+						</p>
+						<p>
+							<i class="fa-regular fa-clock me-2"></i>
+							<span>Sâmbătă - Duminică: Închis </span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container footer-btm">
+		<div class="row">
+			<div class="col-12 d-flex align-items-center justify-content-between">
+				<img src="imgs/NewLogo.png" alt="ExploreX Travel Logo" height="60">
+				<div class="text-center flex-grow-1">
+					<small>Copyright @ ExploreX Travel. Toate drepturile rezervate. | <a href="termeni-si-conditii.html" style="color: inherit; text-decoration: underline;">Termeni și Condiții</a></small>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- SFÂRȘITUL SUBSOLULUI -->
+
+
+<div id="topControl" class="top-control">
+	<i class="fa-brands fa-space-awesome"></i>
+</div>
+
+<!-- Scripturi JS -->
+
+<!-- BOOTSTRAP -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+	crossorigin="anonymous"></script>
+
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!-- JQUERY -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="index.js"></script>
+<script>
+// Navbar dinamică în funcție de autentificare
+fetch('/auth-status', {
+  credentials: 'include'
+})
+  .then(res => res.json())
+  .then(data => {
+    const navLoginItem = document.getElementById('nav-login-item');
+    const navUserItem = document.getElementById('nav-user-item');
+    const navUserEmailText = document.getElementById('nav-user-email-text');
+    const navLogoutItem = document.getElementById('nav-logout-item');
+    if (data.loggedIn && data.email) {
+      navLoginItem.style.display = 'none';
+      navUserItem.classList.remove('d-none');
+      navLogoutItem.classList.remove('d-none');
+      navUserEmailText.textContent = `Ești logat ca: ${data.email}`;
+    } else {
+      navLoginItem.style.display = '';
+      navUserItem.classList.add('d-none');
+      navLogoutItem.classList.add('d-none');
+      navUserEmailText.textContent = '';
+    }
+  });
+// Logout
+const navLogoutBtn = document.getElementById('nav-logout-btn');
+if (navLogoutBtn) {
+  navLogoutBtn.addEventListener('click', function(e) {
+    fetch('/logout', { method: 'POST', credentials: 'include' })
+      .then(() => window.location.reload());
+  });
+}
+</script>
+<script>
+document.getElementById('consultatieForm').onsubmit = function(e) {
+  e.preventDefault();
+  const nume = document.getElementById('consultatieNume').value.trim();
+  const telefon = document.getElementById('consultatieTelefon').value.trim();
+  const msg = document.getElementById('consultatieMsg');
+  if (!nume || !telefon) {
+    msg.textContent = 'Completează toate câmpurile!';
+    msg.className = 'text-danger text-center';
+    return;
+  }
+  fetch('/consultatie', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ nume, telefon })
+  })
+  .then(res => res.json())
+  .then(data => {
+    if (data.message === 'Cerere înregistrată cu succes!') {
+      msg.textContent = data.message;
+      msg.className = 'text-success text-center';
+      document.getElementById('consultatieForm').reset();
+    } else {
+      msg.textContent = data.message || 'Eroare la trimitere!';
+      msg.className = 'text-danger text-center';
+    }
+  })
+  .catch(() => {
+    msg.textContent = 'Eroare la conectare cu serverul!';
+    msg.className = 'text-danger text-center';
+  });
+};
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var link = document.querySelector('a.nav-link[href="#consultatie-telefon"]');
+  if(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      var el = document.getElementById('consultatie-telefon');
+      if (el) {
+        var y = el.offsetTop - 80;
+        window.scrollTo({top: y, behavior: 'smooth'});
+      }
+    });
+  }
+});
+</script>
+</body>
+
+</html>
