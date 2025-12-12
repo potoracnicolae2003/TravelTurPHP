@@ -1,0 +1,19 @@
+# Ignore configuration files with sensitive data
+config.php
+.env
+.env.local
+
+# Ignore IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore Node.js (legacy)
+node_modules/
+package-lock.json
+*.log
